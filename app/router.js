@@ -11,4 +11,7 @@ module.exports = app => {
   router.get('/news', controller.news.index);
   // 动态路由
   router.get('/newslist/:id', controller.news.newsList);
+  // 测试session
+  router.get('/admin', controller.admin.index);
+  router.get('/adminSession', controller.admin.getSession);
 };
