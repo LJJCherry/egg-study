@@ -9,5 +9,6 @@ module.exports = app => {
   router.get('/renderEjs', controller.home.renderEjs);
   router.get('/renderList', controller.home.renderList);
   router.get('/news', controller.news.index);
+  // 动态路由
   router.get('/newslist/:id', controller.news.newsList);
 };
